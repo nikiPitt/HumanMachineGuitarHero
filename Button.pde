@@ -1,17 +1,25 @@
 class Button {
   PVector anchor;
+  String name;
   boolean hit;
   
-  Button(int x, int y) { 
+  Button(String name, int x, int y) { 
+    this.name = name;
     anchor = new PVector(x, y);
   }
   
   void show() {
     rectMode(CENTER);
     if (!hit) {
-      fill(0);      
+      if (this.name.equals("0")) {
+        fill(0, 0, 255);
+      } else if (this.name.equals("1")) {
+        fill(0, 255, 0);
+      } else if (this.name.equals("2")) {
+        fill(255, 0, 0);
+      }    
     } else {
-      fill(255);
+      fill(225);
     }
     rect(anchor.x, anchor.y, 25, 25);    
   }

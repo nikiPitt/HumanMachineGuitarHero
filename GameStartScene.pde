@@ -3,7 +3,7 @@ class GameStartScene {
   Button gameStartBtn;
   
   void generateGameStartSceneObjects() {
-    gameStartBtn = new Button(width/2, height/2);
+    gameStartBtn = new Button("gamestart", width/2, height/2);
   }
   
   void drawGameStartScene() {

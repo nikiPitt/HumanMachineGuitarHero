@@ -1,0 +1,13 @@
+Todo list
+
+1. Building a <perfect> machine player
+	- Machine labeled lane
+	- Calculate distance
+	- Distance == 0: Press button
+	- Score goes up!
+2. Scoring system
+	- Calculating distance
+	- Misshots deduct points
+3. Collaboration calculating system
+4. Signaling system
+	- Signal -> Accept -> Change display
